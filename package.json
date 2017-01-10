@@ -1,0 +1,27 @@
+{
+  "name": "tmcs",
+  "version": "1.0.0",
+  "description": "Time management components system Ver.1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./build/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaofuyesnew/tmcs.git"
+  },
+  "keywords": [
+    "time",
+    "management"
+  ],
+  "author": "Allen Wong",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/xiaofuyesnew/tmcs/issues"
+  },
+  "homepage": "https://github.com/xiaofuyesnew/tmcs#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1"
+  }
+}
