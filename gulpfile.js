@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var reload = browserSync.reload;
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const reload = browserSync.reload;
 
 gulp.task('test', function () {
     return console.log('this is a test');
