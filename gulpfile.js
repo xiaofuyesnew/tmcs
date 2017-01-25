@@ -51,7 +51,7 @@ gulp.task('js', () => {
 
 /** delete whateaver in folder dist */
 gulp.task('del', () => {
-    return gulp.src('./dist/*', { read: false })  //fast way to delete
+    return gulp.src('dist/**', { read: false })  //fast way to delete
     .pipe(ignore('dist/README.md'))
     .pipe(rimraf({ force: true }))
 })
@@ -84,7 +84,7 @@ gulp.task('js:dev', () => {
 
 /** delete whateaver in folder build */
 gulp.task('del:dev', () => {
-    return gulp.src('./build/*', { read: false })  //fast way to delete
+    return gulp.src('build/**', { read: false })  //fast way to delete
     .pipe(ignore('build/README.md'))
     .pipe(rimraf({ force: true }))
 })
