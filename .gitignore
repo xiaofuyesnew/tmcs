@@ -1,5 +1,22 @@
-/node_modules/*
-/dist/*
-!/dist/README.md
+#===public===
 
+#---windows---
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+#---Mac---
 .DS_Store
+
+#===public(end)===
+
+#===project===
+
+node_modules
+dist/*
+build/*
+!dist/README.md
+!build/README.md
+
+#===project===
+
