@@ -12,7 +12,21 @@ gulp.task('sass', function () {
     return gulp.src('src/sass/*.scss')
     .pipe(sass())
     .pipe(cleanCss())
-    .pipe(gulp.dest('dist/static/css'));
+    .pipe(gulp.dest('dist/static/css'))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('sass:dev', function () {
+    return gulp.src('src/sass/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('build/static/css'))
+    .pipe(reload({stream: true}));
+});
+
+gulp.task('dev', ['sass:dev'], function () {
+    browserSync.init({
+
+    });
 });
 
 gulp.task('build', ['test', 'sass']);
